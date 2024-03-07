@@ -16,16 +16,29 @@ int main() {
     // printf("Random number: %d\n", random_number);
 
     while (guessCount < maxGuesses) {
+//         if (guessCount > random_number) {
+//     printf("Too high. Try a lower number.\n");
+// } else if (guessCount < random_number) {
+//     printf("Too low. Try a higher number.\n");
+// } 
+
         printf("Enter a number: ");
         scanf("%d", &number);
-        if (number == random_number) {
+         if (number == random_number) {
             printf("Congratulations!!! You guessed the number🥳😇🥳\n\n");
-            break;
-        } else {
-            printf("Sooorrry😓 that's not the correct number. Try again\n");
-            guessCount++;
+            return 0; // End the program after correct guess
+        } 
+        else if (number > random_number) {
+            printf("Too high😕 Try a lower number.\n");
+        } 
+        else {
+            printf("Too low😟☹. Try a higher number.\n");
         }
-    }
+        
+        guessCount++; // Increment guess count after each guess
+    
+}
+    
 
     if (guessCount == maxGuesses) {
         printf("Sorry😥 you've used all your guesses. The correct number is: %d\n", random_number);
