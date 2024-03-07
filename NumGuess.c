@@ -35,7 +35,7 @@ int main() {
             printf("Too low😟☹. Try a higher number.\n");
         }
         
-        guessCount++; // Increment guess count after each guess
+        guessCount++; // Increment guess count after each guesses
     
 }
     
