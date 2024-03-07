@@ -40,9 +40,8 @@ int main() {
 }
     
 
-    if (guessCount == maxGuesses) {
         printf("Sorry😥 you've used all your guesses. The correct number is: %d\n", random_number);
-    }
+    
 
     return 0;
 }
